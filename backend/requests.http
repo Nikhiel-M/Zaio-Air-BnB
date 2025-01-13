@@ -1,0 +1,47 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "Robin Dick", 
+  "email": "robin@gmail.com"
+}
+
+###
+
+# GET ALL USERS
+GET  http://localhost:5000/users
+###
+
+# GET A SINGLE USER
+GET  http://localhost:5000/users/1
+###
+
+# GET ALL BOOKINGS
+GET http://localhost:5000/bookings
+###
+
+# GET ALL LISTINGS
+GET http://localhost:5000/listings
+
+###
+
+# REGISTER USER
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "name": "Happy Cat", 
+  "email": "happy@gmail.com",
+  "password": "123456"
+}
+###
+
+#LOG IN
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "name": "Happy Cat", 
+  "email": "happy@gmail.com",
+  "password": "123456"
+}

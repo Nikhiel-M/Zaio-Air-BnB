@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ervin Smith",
+      "email": "smith@gmail.com"
+    },
+    {
+      "name": "Robin Dick",
+      "email": "robin@gmail.com",
+      "id": 2
+    },
+    {
+      "email": "happy@gmail.com",
+      "password": "$2a$10$5NMYq4cQBojDHUxcn8Lq0uzWDVG9cuzT6BC1cw8QVgHNJjvFrCSci",
+      "name": "Happy Cat",
+      "id": 3
+    }
+  ],
+  "bookings": [
+    {
+      "listingId": 1,
+      "startDate": "2022-02-20",
+      "endDate": "2022-02-21",
+      "userId": "1",
+      "id": "cf10"
+    }
+  ],
+  "listings": [
+    {
+      "id": "1",
+      "img": "https://a0.muscache.com/im/pictures/miso/Hosting-758725/original/78aadeef-7d1e-43e6-a81f-59ffa6f4259b.jpeg?im_w=720&im_format=avif",
+      "title": "Online Experiences",
+      "description": "Unique activitieswe can do together, led by a world of hosts",
+      "bath_num": 3,
+      "bed_num": 4,
+      "zip": 23456,
+      "address": "Tiverton road",
+      "city": "Cape Town",
+      "street": "Tiverton street",
+      "price": 2000,
+      "sq_ft": 4.2,
+      "email": "test@test.com",
+      "userId": 2
+    },
+    {
+      "id": "2",
+      "img": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTA5NTQxNDc4NDM3MTkzODU2NQ%3D%3D/original/9ce4f044-3b5b-4fc0-9ec0-144d62669dc0.jpeg?im_w=720&im_format=avif",
+      "title": "Unique homes",
+      "description": "Home away from home",
+      "bath_num": 3,
+      "bed_num": 4,
+      "zip": 23456,
+      "address": "Tiverton road",
+      "city": "Cape Town",
+      "street": "Tiverton street",
+      "price": 4000,
+      "sq_ft": 4.2,
+      "email": "test@test.com",
+      "userId": 2
+    }
+  ]
+}
