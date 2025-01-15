@@ -2,27 +2,15 @@ import './App.css';
 import React from 'react';
 import Header from './components/layout/Header';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <Home />
-      {/*
-       *Home
-         Header
-
-       *Banner
-         Search
-
-       *Card
-
-       *Footer
-
-
-       *Search page
-         Header 
-       */}
+      <Footer />
+     
     </div>
   );
 }

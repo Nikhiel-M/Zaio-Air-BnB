@@ -7,8 +7,9 @@
 .banner_info {
     background-color: black;
     color: white;
-    padding:  4%;
-    width: 300px;
+    padding:  5%;
+    width: 200px;
+
 }
 
 banner_info > button {
@@ -20,7 +21,7 @@ banner_info > button {
 }
 
 .banner_info > button:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #ff7779;
 }
 
