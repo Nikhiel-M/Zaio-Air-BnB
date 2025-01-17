@@ -1,7 +1,8 @@
 .banner {
     height: 50vh;
     position: relative;
-    background: url(https://a0.muscache.com/im/pictures/bd754bc8-3dfc-4b04-a805-83d991ccba8d.jpg?im_w=720&im_format=avif) 
+    background: url(https://a0.muscache.com/im/pictures/bd754bc8-3dfc-4b04-a805-83d991ccba8d.jpg?im_w=720&im_format=avif);
+    margin-bottom: 20px;
 }
 
 .banner_info {
@@ -12,7 +13,7 @@
 
 }
 
-banner_info > button {
+.banner_info > button {
     background-color: #ff7779;
     color: white;
     text-transform: inherit;
