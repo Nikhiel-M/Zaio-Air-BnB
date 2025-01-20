@@ -1,11 +1,20 @@
 import React from "react";
-import './Header.css' ;
+import { useDispatch } from "react-redux";
+import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
-import LanguageIcon from '@mui/icons-material/Language';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Avatar } from '@mui/material';
+import LanguageIcon from "@mui/icons-material/Language";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Avatar } from "@mui/material";
+import { openModal } from "../../actions/modalAction";
+import Login from "../Login";
 
 const Header = () => {
+  const dispatch = useDispatch();
+
+  const openModalHandle = () => {
+    dispatch(openModal("open", <Login />));
+  };
+
   return (
     <div className="header">
       <img
@@ -22,6 +31,7 @@ const Header = () => {
         <p>Airbnb your home</p>
         <LanguageIcon />
         <ExpandMoreIcon />
+        <span onClick={openModalHandle}> Login In</span>
         <Avatar />
       </div>
     </div>
