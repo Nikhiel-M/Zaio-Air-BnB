@@ -1,10 +1,10 @@
+import axios from "axios";
+
 import {
   LISTING_LIST_REQUEST,
   LISTING_LIST_SUCCESS,
   LISTING_LIST_FAIL,
 } from "../types/listingTypes";
-
-import axios from "axios";
 
 export const listListing = () => async (dispatch) => {
   try {

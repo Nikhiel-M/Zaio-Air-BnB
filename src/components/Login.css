@@ -109,6 +109,8 @@
     color: #c1bdbd;
     font-size: 14px;
 }
+
+
 .login-or span {
     position: relative;
     z-index: 10;
@@ -116,14 +118,6 @@
     padding: 15px;
 }
 
-.or-divider {
-    border-bottom: 1px solid #E4E4E4;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    z-index: 1;
-    margin: 10px 0px;
-}
 
 .divider {
     border: 1px solid #E4E4E4;
@@ -133,4 +127,26 @@
 .login-modal {
     font-size: 14px;
     color: #7f7a7a;
+}
+
+.browser-default {
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    padding: 10px;
+    width: 99%;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+.or-spacer{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 50%;
+    position: relative;
+    color: #c1bdbd;
+    font-size: 15px;
 }

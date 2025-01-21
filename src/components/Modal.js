@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { openModal } from "../actions/modalAction";
+import { openModal } from "../actions/modalActions";
 import "./Modal.css";
 
 const Modal = () => {
@@ -8,16 +8,10 @@ const Modal = () => {
   const modal = useSelector((state) => state.modal);
   const { openClose, content } = modal;
 
-  let modalInlineStyle;
-
-  if (openClose === "open") {
-    modalInlineStyle = { display: "block" };
-  } else {
-    modalInlineStyle = { display: "none" };
-  }
+  const modalInlineStyle = openClose === "open" ? { display: "block" } : { display: "none" };
 
   const closeModalHandler = () => {
-    dispatch(openModal("close", ""))
+    dispatch(openModal("close", ""));
   };
 
   return (

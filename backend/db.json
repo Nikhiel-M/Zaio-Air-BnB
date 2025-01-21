@@ -1,20 +1,16 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Ervin Smith",
-      "email": "smith@gmail.com"
-    },
-    {
-      "name": "Robin Dick",
-      "email": "robin@gmail.com",
-      "id": 2
+      "email": "dummy@gmail.com",
+      "password": "123456",
+      "name": "dummy",
+      "id": 1
     },
     {
       "email": "happy@gmail.com",
-      "password": "$2a$10$5NMYq4cQBojDHUxcn8Lq0uzWDVG9cuzT6BC1cw8QVgHNJjvFrCSci",
+      "password": "$2a$10$TB78vDJl4iXFRmjh5/.8ye4Ra8e27wIcamvhqm9ISsHWT21MhqMVK",
       "name": "Happy Cat",
-      "id": 3
+      "id": 2
     }
   ],
   "bookings": [

@@ -1,18 +1,25 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import "./Header.css";
+import { useDispatch, useSelector } from "react-redux";
 import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Avatar } from "@mui/material";
-import { openModal } from "../../actions/modalAction";
+import { openModal } from "../../actions/modalActions";
+import { logout } from "../../actions/userActions";
 import Login from "../Login";
+import "./Header.css";
 
 const Header = () => {
   const dispatch = useDispatch();
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
   const openModalHandle = () => {
     dispatch(openModal("open", <Login />));
+  };
+
+  const logoutHandler = () => {
+    dispatch(logout());
   };
 
   return (
@@ -30,8 +37,23 @@ const Header = () => {
       <div className="header_right">
         <p>Airbnb your home</p>
         <LanguageIcon />
-        <ExpandMoreIcon />
-        <span onClick={openModalHandle}> Login In</span>
+        <div className="dropdown">
+          <ExpandMoreIcon className="dropbtn" />
+          <div className="dropdown-content">
+            {userInfo ? (
+              <>
+                <span>Account</span>
+                <span onClick={logoutHandler}>Log out</span>
+              </>
+            ) : (
+              <>
+                <span>Sign up</span>
+                <span onClick={openModalHandle}>Login</span>
+              </>
+            )}
+            <span>Help</span>
+          </div>
+        </div>
         <Avatar />
       </div>
     </div>
