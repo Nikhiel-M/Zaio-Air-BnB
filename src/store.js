@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 import { listingListRedeucer } from "./reducers/listingReducers";
 import { modalReducer } from "./reducers/modalReducers";
@@ -18,12 +18,10 @@ const initialState = {
   userLogin: { userInfo: userInfoFromLS },
 };
 
-const middleware = [thunk];
-
-const store = createStore(
+const store = configureStore({
   reducer,
-  initialState,
-  applyMiddleware(...middleware)
-);
+  preloadedState: initialState,
+  middleware: [thunk],
+});
 
 export default store;
