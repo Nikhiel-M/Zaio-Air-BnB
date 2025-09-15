@@ -26,6 +26,7 @@ const Home = () => {
         <div className="home_section">
           {listings.map((listing) => (
             <Card
+              key={listing.id}
               src={listing.img}
               title={listing.title}
               description={listing.description}

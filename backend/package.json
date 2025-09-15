@@ -11,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "json-server-auth": "^2.1.0"
+  },
+  "dependencies": {
+    "redux": "^5.0.1"
   }
 }
