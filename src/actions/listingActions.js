@@ -10,7 +10,7 @@ export const listListing = () => async (dispatch) => {
   try {
     dispatch({ type: LISTING_LIST_REQUEST });
 
-    const { data } = await axios.get("http://localhost:5000/listings");
+    const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/listings`);
 
     dispatch({ type: LISTING_LIST_SUCCESS, payload: data });
   } catch (error) {
