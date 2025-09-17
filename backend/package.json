@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": "json-server db.json -p 5000 -m ./node_modules/json-server-auth"
+    "server": "json-server db.json -p 5000 -m ./node_modules/json-server-auth",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
