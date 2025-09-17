@@ -1,4 +1,6 @@
-import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import { composeWithDevTools } from "redux-devtools-extension";
 import { listingListRedeucer } from "./reducers/listingReducers";
 import { modalReducer } from "./reducers/modalReducers";
 import { userLoginReducer } from "./reducers/userReducer";
