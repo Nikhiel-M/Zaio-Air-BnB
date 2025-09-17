@@ -6,9 +6,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Avatar } from "@mui/material";
 import { openModal } from "../../actions/modalActions";
 import { logout } from "../../actions/userActions";
-import Login from "../Login";
 import "./Header.css";
-import Signup from "../Signup";
 
 const Header = () => {
   const dispatch = useDispatch();
