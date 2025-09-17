@@ -6,6 +6,8 @@ import {
   USER_LOGOUT,
 } from "../types/userTypes";
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
 export const login = (email, password) => async (dispatch) => {
   try {
     dispatch({
@@ -18,7 +20,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:5000/login",
+      `${apiUrl}/login`,
       { email, password },
       config
     );
