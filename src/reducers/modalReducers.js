@@ -1,14 +1,14 @@
-import {OPEN_MODAL} from "../types/modalTypes";
+import { OPEN_MODAL } from "../types/modalTypes";
 
-const initialState = { openClose: "closed", content: "" };
+const initialState = { openClose: "closed", modalType: "" };
 
 export const modalReducer = (state = initialState, action) => {
   if (action.type === OPEN_MODAL) {
     return {
       ...state,
       openClose: action.payload.openClose,
-      content: action.payload.content,
+      modalType: action.payload.modalType,
     };
   }
-  return state
+  return state;
 };

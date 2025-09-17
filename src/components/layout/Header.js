@@ -8,6 +8,7 @@ import { openModal } from "../../actions/modalActions";
 import { logout } from "../../actions/userActions";
 import Login from "../Login";
 import "./Header.css";
+import Signup from "../Signup";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,11 @@ const Header = () => {
   const { userInfo } = userLogin;
 
   const openModalHandle = () => {
-    dispatch(openModal("open", <Login />));
+    dispatch(openModal("open", "login"));
+  };
+
+  const openSignupModalHandle = () => {
+    dispatch(openModal("open", "signup"));
   };
 
   const logoutHandler = () => {
@@ -47,7 +52,7 @@ const Header = () => {
               </>
             ) : (
               <>
-                <span>Sign up</span>
+                <span onClick={openSignupModalHandle}>Sign up</span>
                 <span onClick={openModalHandle}>Login</span>
               </>
             )}
